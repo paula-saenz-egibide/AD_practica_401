@@ -3,7 +3,25 @@
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_2.xsd"
              version="3.2">
+
     <persistence-unit name="default">
+
+        <properties>
+            <property name="hibernate.connection.url"
+                      value="jdbc:mariadb://localhost:3306/AD_aulavirtual"/>
+            <property name="hibernate.connection.driver_class"
+                      value="org.mariadb.jdbc.Driver"/>
+            <property name="hibernate.connection.password"
+                      value=""/>
+            <property name="hibernate.connection.username"
+                      value="root"/>
+            <property name="hibernate.show_sql"
+                      value="true"/>
+            <property name="hibernate.dialect"
+                      value="org.hibernate.dialect.MariaDBDialect"/>
+            <property name="hibernate.hbm2ddl.auto"
+                      value="update"/>
+        </properties>
 
     </persistence-unit>
 </persistence>
