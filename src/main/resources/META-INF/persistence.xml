@@ -5,6 +5,10 @@
              version="3.2">
 
     <persistence-unit name="default">
+        <class>models.Course</class>
+        <class>models.CourseMaterial</class>
+        <class>models.Student</class>
+        <class>models.Teacher</class>
 
         <properties>
             <property name="hibernate.connection.url"
@@ -18,7 +22,7 @@
             <property name="hibernate.show_sql"
                       value="true"/>
             <property name="hibernate.dialect"
-                      value="org.hibernate.dialect.MariaDBDialect"/>
+                      value="org.hibernate.community.dialect.MariaDBLegacyDialect"/>
             <property name="hibernate.hbm2ddl.auto"
                       value="update"/>
         </properties>
